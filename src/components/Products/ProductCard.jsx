@@ -1,6 +1,7 @@
 import React from "react";
 import "./ProductCard.css";
 import star from "../../assets/white-star.png";
+import basket from "../../assets/basket.png";
 
 const ProductCard = () => {
   return (
@@ -23,6 +24,9 @@ const ProductCard = () => {
             </p>
             <p className="product_review_count"> 50</p>
           </div>
+          <button className="add_to_cart">
+            <img src={basket} alt="" />
+          </button>
         </footer>
       </div>
     </article>

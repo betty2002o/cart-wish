@@ -52,3 +52,15 @@
   padding: 0 10px;
   border-left: 2px solid #dcdcdc;
 }
+.add_to_cart {
+  width: 40px;
+  height: 40px;
+  border: none;
+  border-radius: 100%;
+  background: transparent;
+  cursor: pointer;
+}
+.add_to_cart > img {
+  height: 100%;
+  width: 100%;
+}
