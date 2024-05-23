@@ -1,0 +1,18 @@
+.featured_products {
+  margin: 65px;
+}
+
+.featured_products > h2 {
+  font-size: 48px;
+  text-align: center;
+  margin-bottom: 65px;
+}
+
+.featured_products_list {
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+
+.product_rating {
+  background-color: yellow;
+}

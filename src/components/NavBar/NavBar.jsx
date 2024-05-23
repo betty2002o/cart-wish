@@ -1,6 +1,14 @@
 import React from "react";
 import "../NavBar/NavBar.css";
+import LinkWithIcon from "./LinkWithIcon";
+import rocket from "../../assets/rocket.png";
+import star from "../../assets/glowing-star.png";
+import idButton from "../../assets/id-button.png";
+import memo from "../../assets/memo.png";
+import order from "../../assets/package.png";
+import lock from "../../assets/locked.png";
 import { NavLink } from "react-router-dom";
+
 const NavBar = () => {
   return (
     <div className=" align_center navbar">
@@ -18,46 +26,20 @@ const NavBar = () => {
         </form>
       </div>
       <div className="align_center navbar_links">
-        <NavLink to="/" className="align_center">
-          Home
-          <img src="/src/assets/rocket.png" alt="" class="link_emoji"></img>
-        </NavLink>
-        <NavLink to="/products" className="align_center">
-          Products
-          <img
-            src="/src/assets/glowing-star.png"
-            alt=""
-            class="link_emoji"
-          ></img>
-        </NavLink>
-        <NavLink to="/login" className="align_center">
-          LogIn
-          <img
-            src="/src/assets/id-button.png"
-            alt=""
-            className="link_emoji"
-          ></img>
-        </NavLink>
-        <NavLink to="signup" className="align_center">
-          SignUp
-          <img src="/src/assets/memo.png" alt="" className="link_emoji"></img>
-        </NavLink>
-        <NavLink to="/myorders" className="align_center">
-          My Orders
-          <img
-            src="/src/assets/package.png"
-            alt=""
-            className="link_emoji"
-          ></img>
-        </NavLink>
-        <NavLink to="/logout" className="align_center">
-          LogOut
-          <img src="/src/assets/locked.png" alt="" className="link_emoji"></img>
-        </NavLink>
-        <NavLink to="/cart" className="align_center">
+        <LinkWithIcon link="/" emoji={rocket} title="Home" />
+        <LinkWithIcon link="/products" emoji={star} title="Products" />
+        <LinkWithIcon
+          link="/login"
+          emoji={idButton}
+          title="LogIn"
+        ></LinkWithIcon>
+        <LinkWithIcon link="/signup" emoji={memo} title="SignUp" />
+        {/* <LinkWithIcon link="/myorders" emoji={order} title="My Orders" /> */}
+        {/* <LinkWithIcon link="/logout" emoji={lock} title="LogOut" /> */}
+        {/* <NavLink to="/cart" className="align_center">
           Cart
-          <p class="align_center cart_counts">0</p>
-        </NavLink>
+          <p className="align_center cart_counts">0</p>
+        </NavLink> */}
       </div>
     </div>
   );
