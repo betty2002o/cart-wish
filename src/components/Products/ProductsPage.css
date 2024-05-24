@@ -3,14 +3,3 @@
   grid-template-columns: 1fr 4fr;
   padding: 20px;
 }
-
-.products_sidebar {
-  padding: 10px 20px;
-  border-radius: 5px;
-  background-color: #fff;
-}
-
-.products_sidebar h2 {
-  font-size: 26px;
-  margin-bottom: 10px;
-}
