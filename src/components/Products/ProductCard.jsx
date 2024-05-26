@@ -2,17 +2,18 @@ import React from "react";
 import "./ProductCard.css";
 import star from "../../assets/white-star.png";
 import basket from "../../assets/basket.png";
+import { NavLink } from "react-router-dom";
 
-const ProductCard = () => {
+const ProductCard = ({ id }) => {
   return (
     <article className="product_card">
       <div className="product_image">
-        <a href="">
+        <NavLink to={`/products/${id}`}>
           <img
             src="https://cartwish-backend-29v7.onrender.com/products/iphone14pro-1.jpg"
             alt="product image"
           />
-        </a>
+        </NavLink>
       </div>
       <div className="product_detail">
         <div className="product_price">$1299</div>

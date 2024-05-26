@@ -16,8 +16,8 @@ const ProductsList = () => {
         </select>
       </header>
       <div className="products_list align_center">
-        <ProductCard />
-        <ProductCard />
+        <ProductCard id="64785d123d580d0c6848e37c" />
+        <ProductCard id="64785d123d580d0c6848e37c" />
         <ProductCard />
         <ProductCard />
         <ProductCard />

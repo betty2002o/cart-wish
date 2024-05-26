@@ -5,15 +5,15 @@ import rocket from "../../assets/rocket.png";
 import star from "../../assets/glowing-star.png";
 import idButton from "../../assets/id-button.png";
 import memo from "../../assets/memo.png";
-import order from "../../assets/package.png";
-import lock from "../../assets/locked.png";
 import { NavLink } from "react-router-dom";
 
 const NavBar = () => {
   return (
     <div className=" align_center navbar">
       <div className="align_center">
-        <h1 className="navbar_heading">CartWish</h1>
+        <NavLink to="/" className="navbar_heading">
+          CartWish
+        </NavLink>
         <form className=" align_center navbar_form">
           <input
             type="text"
