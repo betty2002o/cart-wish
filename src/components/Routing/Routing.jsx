@@ -4,6 +4,7 @@ import MyOrders from "../MyOrders/MyOrders";
 import Home from "../Home/Home";
 import ProductsPage from "../Products/ProductsPage";
 import SingleProductPage from "../SingleProductPage/SingleProductPage";
+import CartPage from "../Cart/CartPage";
 
 const Routing = () => {
   return (
@@ -12,6 +13,7 @@ const Routing = () => {
       <Route path="/myorders" element={<MyOrders />} />
       <Route path="/products" element={<ProductsPage />} />
       <Route path="/products/:id" element={<SingleProductPage />} />
+      <Route path="/cart" element={<CartPage />} />
     </Routes>
   );
 };

@@ -34,12 +34,14 @@ const NavBar = () => {
           title="LogIn"
         ></LinkWithIcon>
         <LinkWithIcon link="/signup" emoji={memo} title="SignUp" />
+        {/* <LinkWithIcon link="/cart" emoji={memo} title="Cart" /> */}
+
         {/* <LinkWithIcon link="/myorders" emoji={order} title="My Orders" /> */}
         {/* <LinkWithIcon link="/logout" emoji={lock} title="LogOut" /> */}
-        {/* <NavLink to="/cart" className="align_center">
+        <NavLink to="/cart" className="align_center">
           Cart
           <p className="align_center cart_counts">0</p>
-        </NavLink> */}
+        </NavLink>
       </div>
     </div>
   );
