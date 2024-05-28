@@ -45,7 +45,7 @@ const SingleProductPage = () => {
         <p className="single_product_price">${product.price}</p>
         <h2 className="quantity_title">Quantity</h2>
         <div className="quantity_input align_center">
-          <QuantityInput stock={product.stock} />
+          <QuantityInput quantity={product.stock} />
         </div>
         <button className="add_cart search_button">Add To Cart</button>
       </div>

@@ -1,5 +1,8 @@
 import "./CartPage.css";
 import React from "react";
+import remove from "../../assets/remove.png";
+import Table from "./../Common/Table";
+import QuantityInput from "./../SingleProductPage/QuantityInput";
 
 const CartPage = () => {
   return (
@@ -8,33 +11,42 @@ const CartPage = () => {
         <p className="user_name">name</p>
         <p>abc@gmail.com</p>
       </div>
-
-      <table className="common_table">
-        <thead>
-          <th>Item</th>
-          <th>Price</th>
-          <th>Quantity</th>
-          <th>Total</th>
-          <th>Remove</th>
-        </thead>
+      <Table heading={["Item", "Price", "Quantity", "Total", "Remove"]}>
         <tbody>
           <tr>
             <td>123</td>
             <td>123</td>
-            <td>123</td>
+            <td className="align_center table_quantity_input">
+              <QuantityInput quantity={1} />
+            </td>
             <td>123dasdsa</td>
-            <td>123</td>
+            <td>
+              <img
+                src={remove}
+                alt="remove icon"
+                className="cart_remove_icon"
+                // onClick={() => removeFromCart(product._id)}
+              />
+            </td>
           </tr>
           <tr>
+            <td>Samsung Galaxy A54</td>
             <td>123</td>
-            <td>123</td>
-            <td>123</td>
+            <td className="align_center table_quantity_input">
+              <QuantityInput quantity={1} />
+            </td>
             <td>123dasdsa</td>
-            <td>123</td>
+            <td>
+              <img
+                src={remove}
+                alt="remove icon"
+                className="cart_remove_icon"
+                // onClick={() => removeFromCart(product._id)}
+              />
+            </td>
           </tr>
         </tbody>
-      </table>
-
+      </Table>
       <table className="cart_bill">
         <tbody>
           <tr>
